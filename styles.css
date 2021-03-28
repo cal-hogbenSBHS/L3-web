@@ -1,4 +1,26 @@
+@font-face {
+    Font-family: Love Story Rough;
+    src: url(fonts/love.ttf);
+}
+
+* { 
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+  Font-size: 200%;
+   align-items: center;
+    background: linear-gradient(180deg, rgba(218,206,205) 0%, rgba(255,255,255)80%);
+    background-size: 100vw 100vh;
+   
+        
+}
+
 nav {
+    text-align: center; 
     display: grid;
-    grid-template-columns: 5% 2fr 4fr 1fr 5%;
+    grid-template-columns: 25% 2fr 2fr 2fr 10%;
+    font-family: Love Story Rough;
+   
 }
