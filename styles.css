@@ -1,104 +1,104 @@
 @font-face {
-    Font-family: Love Story Rough;
-    src: url(fonts/love.ttf);
+  Font-family: LoveStoryRough;
+  src: url(fonts/love.ttf);
 }
 
 * {
-    text-decoration: none;
-    margin: 0px;
-    padding: 0px;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 html {
-    Font-size: 200%;
-    align-items: center;
-    background: linear-gradient(180deg, rgba(218, 206, 205) 0%, rgba(255, 255, 255)80%);
-    background-size: 100vw 100vh;
+  Font-size: 200%;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(218, 206, 205) 0%, rgba(255, 255, 255)80%);
+  background-size: 100vw 100vh;
 }
 
 nav {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-family: Love Story Rough;
-    grid-auto-rows: 5fr 5fr;
-    margin: 10px;
-    align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: LoveStoryRough;
+  grid-auto-rows: 5fr 5fr;
+  margin: 10px;
+  align-items: center;
 }
 
 nav a {
-    padding: 15px;
-    color: aliceblue;
+  padding: 15px;
+  color: aliceblue;
 }
 
 .logo {
-    justify-self: center;
-    width: 50%;
+  justify-self: center;
+  width: 50%;
 }
 
 .cartNav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 .cartNav h2 {
-    margin: 0px 5%;
+  margin: 1px 5%;
+  align-self: center;
 }
 
 section {
-    grid-template-columns: auto;
-    justify-self: auto;
-    background color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 30px auto;
+  background color: white;
+}
 
+.overlay,
+.promo1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.overlay {
+  margin: 20px;
+  font-family: LoveStoryRough;
+  color: aliceblue;
+  padding-left: 10px;
+}
+
+.promo1,
+.promo2 {
+  padding: 20px;
+  border: 1px solid grey;
+  background-color: white;
+  box-shadow: 2px 2px 10px black;
+}
+
+.promo2 {
+  justify-self: end;
 }
 
 .cart {
-    width: 8%;
-    justify-self: end;
-    align-self: center;
+  width: 10%;
+  justify-self: end;
+  align-self: center;
 }
 
- li {
-
-    background-color: whitesmoke;
-    min-height: 30vh;
-    list-style: none;
-    width: 35%;
-    margin-left: 200px;
-    margin-top: 100px;
-    margin-bottom: auto;
-    margin-right: auto;
-    padding: 2vh 1%;
-    box-shadow: 1px 1px 10px black;
+.me {
+  margin-left: 80%;
+  border: 2px solid black;
+  width: auto;
 }
 
-.piss ul {
-    display: flex;
-    justify-content: center;
-    margin: 10vh 0px;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.piss2 ul {
-    display: flex;
-    justify-content: center;
-    margin: 10vh 0px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.piss li img {
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.piss2 li img {
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.about {
+align-self: start;
+justify-content: left;
+  font-size: 75%;
+  /* padding: 20px; */
+  /* margin: 20px; */
+  /* text-align: left; */
+  display: grid;
+  grid-column: 1/2;
 }
