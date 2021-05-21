@@ -49,14 +49,12 @@ nav a {
 
 .cartNav {
   display: flex;
-
 }
 
 .cartNav h2 {
   margin: 1px 5%;
   display: grid;
   grid-column: 1fr 1fr 1fr;
-
 }
 
 section {
@@ -65,12 +63,14 @@ section {
   width: 80%;
   margin: 30px auto;
   background color: white;
+  overflow: visible;
 }
 
 .overlay,
 .promo1 {
   grid-column: 1/2;
   grid-row: 1/2;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
 }
 
 .overlay {
@@ -94,19 +94,17 @@ section {
 
 .cart {
   width: 10%;
-
 }
 
 .me {
   margin-left: 55%;
   border: 2px solid black;
   width: auto;
-
 }
 
 .about {
-align-self: start;
-justify-content: left;
+  align-self: start;
+  justify-content: left;
   font-size: 80%;
   /* padding: 20px; */
   /* margin: 20px; */
@@ -116,7 +114,7 @@ justify-content: left;
 }
 
 #cartproducts {
-   display: block;
+  display: block;
 }
 
 ul {
@@ -128,6 +126,8 @@ ul {
 
 .main {
   width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 
 nav a:hover {
@@ -160,12 +160,8 @@ h2 {
   color: red;
 }
 
-
-
 li h1 {
-
-font-size: 30px;
-
+  font-size: 30px;
 }
 
 li h2 {
@@ -176,5 +172,45 @@ li h3 {
   font-size: 30px;
 }
 
-.cartness {
+
+ @media only screen and (max-width: 600px) {
+  .links {
+     background-color: grey;
+    grid-template-columns: : 1fr 2fr 1fr;
+    display: grid;
+  }
+
+  li {
+    width: 100%;
+    background-color: grey;
+    list-style: none;
+    padding-top: 20px;
+    text-align: center;
+    margin: 50px;
+    box-shadow: 2px 2px 2px;
+  }
+
+  .logo {
+  justify-self:right;
+  width: 50%;
+
+}
+
+.main {
+  width: 100%;
+  grid-template-columns: 20%;
+  grid-template-rows: 10%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+}
+
+
+
+
+.overlay,
+.promo1 {
+  grid-column: 1fr 1fr 1fr;
+  grid-row: 2fr 1fr;
+
+}
+
 }
