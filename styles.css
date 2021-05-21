@@ -31,6 +31,12 @@ nav a {
   color: aliceblue;
 }
 
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 4vw;
+}
+
 .logo {
   justify-self: center;
   width: 50%;
@@ -87,18 +93,62 @@ section {
 }
 
 .me {
-  margin-left: 65%;
+  margin-left: 55%;
   border: 2px solid black;
   width: auto;
+
 }
 
 .about {
 align-self: start;
 justify-content: left;
-  font-size: 90%;
+  font-size: 80%;
   /* padding: 20px; */
   /* margin: 20px; */
   /* text-align: left; */
   display: grid;
   grid-column: 1/2;
+}
+
+#cartproducts {
+  display: block;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  width: 80%;
+}
+
+.main {
+  width: 100%;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+li {
+  width: 100%;
+  background-color: grey;
+  list-style: none;
+  padding-top: 20px;
+  text-align: center;
+}
+
+li img {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+h2 {
+  display: inline-block;
+  color: red;
 }
