@@ -1,7 +1,10 @@
 var Items = [
   ['codeImages/skateboardDeck4.jpg', 29.99, 'product 1'],
   ['codeImages/SkateDeck.jpg', 15.00, 'product 2'],
-  ['codeImages/skateboardDeck2.jpg', 20.00, 'product 3']
+  ['codeImages/skateboardDeck2.jpg', 20.00, 'product 3'],
+  ['codeImages/skateboarddeck3.jpg', 10.00, 'product 4'],
+  ['codeImages/skateboard6.jpg', 25.00, 'product 5'],
+  ['codeImages/skateboard5.jpg', 35.00, 'product 6'],
 ];
 
 var cartItems = [];
